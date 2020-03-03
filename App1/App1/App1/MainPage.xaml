@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:tt="clr-namespace:TouchTracking"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.MainPage"
+             Title="App">
+    <ContentPage.Content>
+        <StackLayout Padding="12">
+            <Button x:Name="Circle_button" Text=" Круг " BackgroundColor="LightGreen"  Clicked="CircleClick" HorizontalOptions="FillAndExpand" VerticalOptions="Center"></Button>
+            <Button x:Name="Triangle_button" Text=" Треугольник "  BackgroundColor="LightGreen" Clicked="TriangleClick" HorizontalOptions="FillAndExpand"></Button>
+            <Button x:Name="Square_button" Text=" Квадрат "  BackgroundColor="LightGreen" Clicked="SquareClick" HorizontalOptions="FillAndExpand" ></Button>
+            <skia:SKCanvasView x:Name="SKC" HeightRequest="400" BackgroundColor="Black" PaintSurface="OnHslCanvasViewPaintSurface"></skia:SKCanvasView>
+            <Button x:Name="Clear_button" Text=" Отчистить "  BackgroundColor="LightGreen" Clicked="ClearClick" HorizontalOptions="FillAndExpand" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
